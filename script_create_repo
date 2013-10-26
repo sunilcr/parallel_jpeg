@@ -1,0 +1,12 @@
+#/bin/bash!
+
+git init
+git add .
+git commit -m "Initial Version"
+
+echo "Adding origin...."
+echo $1
+git remote add origin $1
+
+echo "Pushing to remote..."
+git push origin master
